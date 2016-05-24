@@ -10,6 +10,7 @@ export default class Complete extends service.Sled {
    *        data.payment
    */
   async exec(data) {
+    if (!data.done) service.error('No valid payment complete hooks');
     let payment = data.payment;
     payment.state = 1;
     await payment.save()
