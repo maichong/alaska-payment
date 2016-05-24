@@ -7,7 +7,7 @@
 export default class Payment extends service.Model {
 
   static label = 'Payment Logs';
-  static defaultColumns = 'title user payment amount state createdAt';
+  static defaultColumns = 'title user type amount state createdAt';
   static defaultSort = '-createdAt';
   static nocreate = true;
   static noedit = true;
@@ -29,19 +29,14 @@ export default class Payment extends service.Model {
       ref: 'alaska-user.User',
       private: true
     },
-    orders: {
-      label: 'Orders',
-      ref: ['alaska-order.Order'],
-      private: true
-    },
     amount: {
       label: 'Amount',
       type: Number,
       require: true,
       private: true
     },
-    payment: {
-      label: 'Payment',
+    type: {
+      label: 'Payment Type',
       type: 'select',
       options: [],
       require: true

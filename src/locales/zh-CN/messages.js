@@ -11,5 +11,7 @@ export default {
   Pending: '进行中',
   Success: '成功',
   Failed: '失败',
-  Params: '参数'
+  Params: '参数',
+  'Payment Type': '支付类型',
+  'Can not create any payment': '未能生成支付信息'
 };
