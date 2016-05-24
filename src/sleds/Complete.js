@@ -4,9 +4,6 @@
  * @author Liang <liang@maichong.it>
  */
 
-const ORDER = alaska.service('alaska-order');
-const Order = ORDER.model('Order');
-
 export default class Complete extends service.Sled {
   /**
    * @param data
