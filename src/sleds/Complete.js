@@ -13,6 +13,7 @@ export default class Complete extends service.Sled {
     if (!data.done) service.error('No valid payment complete hooks');
     let payment = data.payment;
     payment.state = 1;
-    await payment.save()
+    await payment.save();
+    return payment.toObject();
   }
 }

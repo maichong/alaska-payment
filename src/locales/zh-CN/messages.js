@@ -14,5 +14,7 @@ export default {
   'Failure Reason': '失败原因',
   Params: '参数',
   'Payment Type': '支付类型',
-  'Can not create any payment': '未能生成支付信息'
+  'Can not create any payment': '未能生成支付信息',
+  Amount: '金额',
+  State: '状态'
 };
