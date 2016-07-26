@@ -6,8 +6,8 @@
 
 export default {
   prefix: '/payment',
-  services: [
-    { id: 'alaska-user', alias: 'user' }
-  ],
+  services: {
+    'alaska-user': {}
+  },
   //plugins: ['alaska-payment-alipay']
 };

@@ -4,7 +4,9 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Create extends service.Sled {
+import alaska from 'alaska';
+
+export default class Create extends alaska.Sled {
   async exec(data) {
     let payment = data.payment;
     if (!payment) {

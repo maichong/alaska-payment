@@ -4,9 +4,12 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Payment extends service.Model {
+import alaska from 'alaska';
+
+export default class Payment extends alaska.Model {
 
   static label = 'Payment Logs';
+  static icon = 'credit-card';
   static defaultColumns = 'title user type amount state createdAt';
   static defaultSort = '-createdAt';
   static nocreate = true;

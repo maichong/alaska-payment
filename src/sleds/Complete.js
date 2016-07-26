@@ -4,7 +4,9 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Complete extends service.Sled {
+import alaska from 'alaska';
+
+export default class Complete extends alaska.Sled {
   /**
    * @param data
    *        data.payment

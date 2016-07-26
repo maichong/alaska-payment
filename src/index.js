@@ -9,7 +9,7 @@ import alaska from 'alaska';
 /**
  * @class PaymentService
  */
-export default class PaymentService extends alaska.Service {
+class PaymentService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
     options.dir = options.dir || __dirname;
@@ -18,3 +18,5 @@ export default class PaymentService extends alaska.Service {
     this.payments = {};
   }
 }
+
+export default new PaymentService();
