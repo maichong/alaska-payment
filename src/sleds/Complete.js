@@ -12,7 +12,7 @@ export default class Complete extends alaska.Sled {
    *        data.payment
    */
   async exec(data) {
-    if (!data.done) service.error('No valid payment complete hooks');
+    if (!data.done) alaska.error('No valid payment complete hooks');
     let payment = data.payment;
     payment.state = 1;
     await payment.save();

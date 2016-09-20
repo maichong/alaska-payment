@@ -11,7 +11,7 @@ export default class Create extends alaska.Sled {
     let payment = data.payment;
     if (!payment) {
       //前置钩子未生成任何支付记录
-      service.error('Can not create any payment');
+      alaska.error('Can not create any payment');
     }
     return payment;
   }

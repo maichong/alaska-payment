@@ -10,11 +10,11 @@ import alaska from 'alaska';
  * @class PaymentService
  */
 class PaymentService extends alaska.Service {
-  constructor(options, alaska) {
+  constructor(options) {
     options = options || {};
     options.dir = options.dir || __dirname;
     options.id = options.id || 'alaska-payment';
-    super(options, alaska);
+    super(options);
     this.payments = {};
   }
 }
